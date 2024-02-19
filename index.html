@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>VinilMXPreso Store</title>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<header>
+			
+            <div class="caja">
+                <h1><img src="imagenes/titulo-2.jpg"></h1>
+                
+            </div>
+			<div class="container-icon">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="icon-cart"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+					/>
+				</svg>
+				<div class="count-products">
+					<span id="contador-productos">0</span>
+				</div>
+
+				<div class="container-cart-products hidden-cart">
+					<div class="cart-product">
+						<div class="info-cart-product">
+                            <span class="cantidad-producto-carrito">1</span>
+                            <p class="titulo-producto-carrito">Funda Alcantara</p>
+                            <span class="precio-producto-carrito">$499</span>
+                        </div>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="icon-close"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M6 18L18 6M6 6l12 12"
+							/>
+						</svg>
+					</div>
+                    <div class="cart-total">
+                        <h3>Total:</h3>
+                        <span class="total-pagar">$499</span>
+                    </div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section>
+				<div class="container-items">
+					<div class="item">
+						<figure>
+							<img
+								src="imagenes/presentacion-bmw.jpg"
+								alt="producto"
+							/>
+						</figure>
+						<div class="info-product">
+							<h2>Fundas Alcantara</h2>
+							<p class="price">Desde $499</p>
+							<a href="seleccion-fundas.html">
+								<button>Selecionar modelo</button>
+							</a>			
+							
+						</div>
+					</div>
+					<div class="item">
+						<figure>
+							<img
+								src="imagenes/portada-alcantara-wrap.jpg"
+								alt="producto"
+							/>
+						</figure>
+						<div class="info-product">
+							<h2>Wrap Alcantara</h2>
+							<p class="price">Desde $219</p>
+							<a href="viniles.html">
+								<button>Selecionar tamaño</button>
+							</a>
+							
+						</div>
+					</div>
+				</div>	
+			</section>
+
+			<section class="principal">
+
+				<h2 class="titulo-principal">Sobre VinilMXPreso</h2>				
+
+				<p>Con sede en un pequeño taller en el municipio de Huixquilucan, <strong>VinilMXPreso</strong> Introduce al mercado el material textil "Alcantara" en fundas, páneles y todo aquello que quiera darle ese estilo de un super auto. Fundada en 2023, VinilMXPreso ya es destacado en la ciudad y conquista nuevos clientes diariamente con sus productos.</p>
+    
+                <p id="mision"><em>Nuestra misión es: <strong>"Proporcionar un look más deportivo y textil de la mayor calidad a sus proyectos"</strong>.</em></p>
+    
+                <p>Ofrecemos productos de la más alta calidad, pues actualmente la marca cuenta con un proceso completamente artesanal en la elaboración de cada producto por manos altamente calificadas en materia textil y costura.</p>	
+								
+			</section>			
+	 </main>
+
+	 <footer>			
+			<p class="copyright">&copy Copyright VinilMXPreso - 2024</p>
+	 </footer>
+
+        <script src="index.js"></script>
+	</body>
+</html>

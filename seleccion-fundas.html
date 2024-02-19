@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles-fundas.css" rel="stylesheet" type="text/css">
+    <title>Fundas Productos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <div class="caja">
+            <h1><img src="imagenes/titulo-2.jpg"></h1>            
+        </div>
+        <div class="header-container">
+            <div class="cart-container">
+                <img class= cart src="carrito-de-compras.png" alt="carrito">
+                <div id="product-counter" class="counter">0</div> <!-- Product Counter -->
+                <div id="cart-container" class="hidden"> <!-- Cambio de id a "cart-container" -->
+                    <h2>Carrito</h2>
+                    <ul id="cart-list"></ul>
+                    <p>Total: <span id="total"></span></p>
+                    <button id="empty-cart">Vaciar</button>
+                    <a href="resumen-del-pedido.html">
+                        <button id="proceder-pago">Pagar</button>
+                    </a>                 
+                </div>
+            </div>
+        </div>
+    </header>          
+             
+        <div id="contenedor" class="contenedor">
+            <div>
+                <img src="imagenes prueba/producto 1.jpg" alt="producto 1">
+                <div class="informacion">
+                    <p>Producto 1</p>
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 1', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/Producto 2.jpg" alt="producto 2">
+                <div class="informacion">
+                    <p>Producto 2</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 2', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 3.jpg" alt="producto 3">
+                <div class="informacion">
+                    <p>Producto 3</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 3', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 4.jpg" alt="producto 4">
+                <div class="informacion">
+                    <p>Producto 4</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 4', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 5.jpg" alt="producto 5">
+                <div class="informacion">
+                    <p>Producto 5</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 5', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 6.jpg" alt="producto 6">
+                <div class="informacion">
+                    <p>Producto 6</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 6', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 7.jpg" alt="producto 7">
+                <div class="informacion">
+                    <p>Producto 7</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 7', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 8.jpg" alt="producto 8">
+                <div class="informacion">
+                    <p>Producto 8</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 8', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 9.jpg" alt="producto 9">
+                <div class="informacion">
+                    <p>Producto 9</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 9', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 10.jpg" alt="producto 10">
+                <div class="informacion">
+                    <p>Producto 10</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 10', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 11.jpg" alt="producto 11">
+                <div class="informacion">
+                    <p>Producto 11</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 11', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 12.jpg" alt="producto 12">
+                <div class="informacion">
+                    <p>Producto 12</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 12', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 13.jpg" alt="producto 13">
+                <div class="informacion">
+                    <p>Producto 13</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 13', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 14.jpg" alt="producto 14">
+                <div class="informacion">
+                    <p>Producto 14</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 14', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 15.jpg" alt="producto 15">
+                <div class="informacion">
+                    <p>Producto 15</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 15', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 16.jpg" alt="producto 16">
+                <div class="informacion">
+                    <p>Producto 16</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 16', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 17.jpg" alt="producto 17">
+                <div class="informacion">
+                    <p>Producto 17</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 17', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 18.jpg" alt="producto 18">
+                <div class="informacion">
+                    <p>Producto 18</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 18', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 19.jpg" alt="producto 19">
+                <div class="informacion">
+                    <p>Producto 19</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 19', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 20.jpg" alt="producto 20">
+                <div class="informacion">
+                    <p>Producto 20</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 20', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 21.jpg" alt="producto 21">
+                <div class="informacion">
+                    <p>Producto 21</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 21', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 22.jpg" alt="producto 22">
+                <div class="informacion">
+                    <p>Producto 22</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 22', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 23.jpg" alt="producto 23">
+                <div class="informacion">
+                    <p>Producto 23</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 23', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 24.jpg" alt="producto 24">
+                <div class="informacion">
+                    <p>Producto 24</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 24', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 25.jpg" alt="producto 25">
+                <div class="informacion">
+                    <p>Producto 25</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 25', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 26.jpg" alt="producto 26">
+                <div class="informacion">
+                    <p>Producto 26</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 26', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 27.jpg" alt="producto 27">
+                <div class="informacion">
+                    <p>Producto 27</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 27', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 28.jpg" alt="producto 28">
+                <div class="informacion">
+                    <p>Producto 28</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 28', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 29.jpg" alt="producto 29">
+                <div class="informacion">
+                    <p>Producto 29</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 29', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 30.jpg" alt="producto 30">
+                <div class="informacion">
+                    <p>Producto 30</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 30', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 31.jpg" alt="producto 31">
+                <div class="informacion">
+                    <p>Producto 31</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 31', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 32.jpg" alt="producto 32">
+                <div class="informacion">
+                    <p>Producto 32</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 32', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 33.jpg" alt="producto 33">
+                <div class="informacion">
+                    <p>Producto 33</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 33', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 34.jpg" alt="producto 34">
+                <div class="informacion">
+                    <p>Producto 34</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 34', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 35.jpg" alt="producto 35">
+                <div class="informacion">
+                    <p>Producto 35</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 35', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 36.jpg" alt="producto 36">
+                <div class="informacion">
+                    <p>Producto 36</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 36', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 37.jpg" alt="producto 37">
+                <div class="informacion">
+                    <p>Producto 37</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 37', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 38.jpg" alt="producto 38">
+                <div class="informacion">
+                    <p>Producto 38</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 38', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 39.jpg" alt="producto 39">
+                <div class="informacion">
+                    <p>Producto 39</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 39', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 40.jpg" alt="producto 40">
+                <div class="informacion">
+                    <p>Producto 40</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 40', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 41.jpg" alt="producto 41">
+                <div class="informacion">
+                    <p>Producto 41</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 41', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 42.jpg" alt="producto 42">
+                <div class="informacion">
+                    <p>Producto 42</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 42', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 43.jpg" alt="producto 43">
+                <div class="informacion">
+                    <p>Producto 43</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 43', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 44.jpg" alt="producto 44">
+                <div class="informacion">
+                    <p>Producto 44</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 44', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 45.jpg" alt="producto 45">
+                <div class="informacion">
+                    <p>Producto 45</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 45', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 46.jpg" alt="producto 46">
+                <div class="informacion">
+                    <p>Producto 46</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Product 46', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 47.jpg" alt="producto 47">
+                <div class="informacion">
+                    <p>Producto 47</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 47', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 48.jpg" alt="producto 48">
+                <div class="informacion">
+                    <p>Producto 48</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 48', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 49.jpg" alt="producto 49">
+                <div class="informacion">
+                    <p>Producto 49</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 49', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 50.jpg" alt="producto 50">
+                <div class="informacion">
+                    <p>Producto 50</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 50', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 51.jpg" alt="producto 51">
+                <div class="informacion">
+                    <p>Producto 51</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 51', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 52.jpg" alt="producto 52">
+                <div class="informacion">
+                    <p>Producto 52</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 52', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 53.jpg" alt="producto 53">
+                <div class="informacion">
+                    <p>Producto 53</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 53', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 54.jpg" alt="producto 54">
+                <div class="informacion">
+                    <p>Producto 38</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 54', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 55.jpg" alt="producto 55">
+                <div class="informacion">
+                    <p>Producto 55</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 55', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 56.jpg" alt="producto 56">
+                <div class="informacion">
+                    <p>Producto 56</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 56', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 57.jpg" alt="producto 57">
+                <div class="informacion">
+                    <p>Producto 38</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 57', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 58.jpg" alt="producto 58">
+                <div class="informacion">
+                    <p>Producto 58</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 58', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 59.jpg" alt="producto 58">
+                <div class="informacion">
+                    <p>Producto 58</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 59', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 60.jpg" alt="producto 60">
+                <div class="informacion">
+                    <p>Producto 60</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 60', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 61.jpg" alt="producto 61">
+                <div class="informacion">
+                    <p>Producto 61</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 61', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 62.jpg" alt="producto 62">
+                <div class="informacion">
+                    <p>Producto 62</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 62', 499)">Comprar</button>
+                </div>
+            </div>
+            <div>
+                <img src="imagenes prueba/producto 63.jpg" alt="producto 63">
+                <div class="informacion">
+                    <p>Producto 63</p>                   
+                    <p class="precio">$499</p>
+                    <button onclick="agregarAlCarrito('Producto 63', 499)">Comprar</button>
+                </div>
+            </div>
+        </div>
+        <footer>			
+			<p class="copyright">&copy Copyright VinilMXPreso - 2024</p>
+	   </footer>       
+      <script src="app.js"></script>
+ </body>
+</html>
